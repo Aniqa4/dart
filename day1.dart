@@ -39,4 +39,50 @@ void main() {
   for (int i = 1; i <= 10; i++) {
     print(i);
   }
+
+  // for in loop to print a list of products
+  List<String> products = [
+  "T-shirt",
+  "Jeans",
+  "Shoes",
+  "Bag",
+  "Watch"
+];
+
+for (String product in products) {
+  print("Product: $product");
+}
+
+List<double> prices = [
+  500,
+  1200,
+  2500,
+  1500,
+  3000
+];
+
+for (double price in prices) {
+  print("Price: $price");
+}
+
+double calculateTotal(List<double> prices) {
+  double total = 0;
+  for (double price in prices) {
+    total += price;
+  }
+  return total;
+}
+
+print("Total Price: ${calculateTotal(prices)}");
+
+//map to store product and price
+Map<String, dynamic> product = {
+  "name": "T-shirt",
+  "price": 500,
+  "inStock": true,
+};
+product.forEach((key, value) {
+  print("$key: $value");
+});
+
 }
