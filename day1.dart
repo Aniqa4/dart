@@ -75,6 +75,7 @@ void main() {
 
   print("Product Name: ${product['name']}");
 
+// List of products with their details
   List<Map<String, dynamic>> products = [
     {"name": "T-shirt", "price": 500, "inStock": true},
     {"name": "Jeans", "price": 1200, "inStock": false},
@@ -86,4 +87,9 @@ void main() {
       print("Product Name: ${product['name']}");
     }
   }
+
 }
+
+
+
+
